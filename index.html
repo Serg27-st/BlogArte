@@ -1,113 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>ArteUTP</h1>
+  <header>
+    <div class="contenedor-header">
+      <span class="texto-arte">Arte</span>
+      <img src="utpLogo.png" class="logo">
+      <div class="titulo-texto">
         <p>Galería de arte y dibujos</p>
+      </div>
+    </div>
+  </header>
 
-      </header>
-      
-    
-      <section class="galeria">
-        <h2 >Galería de Obras:</h2>
-        <div >
-          <img src="C:\Users\Sergio\Desktop\UTP CURSOS\DESARROLLO WEB HTML\proyecto taller web\BlogArte\imagen1.webp" alt="paisaje 1 por: Moises Vargas" >
-          <p>paisaje 1 por: Moises Vargas</p><br>
-          <hr>
-          <img src="C:\Users\Sergio\Desktop\UTP CURSOS\DESARROLLO WEB HTML\proyecto taller web\BlogArte\imagen2.webp" alt="paisaje 2 por Moises Vargas">
-          <p>paisaje 2 por: Moises Vargas</p><br>
-          <hr>          
-          <img src="C:\Users\Sergio\Desktop\UTP CURSOS\DESARROLLO WEB HTML\proyecto taller web\BlogArte\espacio1.webp" alt="espacio 1 por Sebastian Virgilio">
-          <p>espacio 1 por Sebastian Virgilio</p><br>
-          <hr>
-          <img src="C:\Users\Sergio\Desktop\UTP CURSOS\DESARROLLO WEB HTML\proyecto taller web\BlogArte\espacio 2.webp" alt="espacio 2 por Sebastian Virgilio">
-          <p>espacio 2 por Sebastian Virgilio</p><br>
-          <hr>
-          <img src="C:\Users\Sergio\Desktop\UTP CURSOS\DESARROLLO WEB HTML\proyecto taller web\BlogArte\ciudad1.webp" alt="ciudad 1 por Leticia Ruiz">
-          <p>ciudad 1 por Leticia Ruiz</p><br>
-          <hr>
-          <img src="C:\Users\Sergio\Desktop\UTP CURSOS\DESARROLLO WEB HTML\proyecto taller web\BlogArte\ciudad2.webp" alt="ciudad 2 por Leticia Ruiz">
-          <p>ciudad 2 por Leticia Ruiz</p><br>
-          <hr>
-          <video controls src="C:\Users\Sergio\Desktop\UTP CURSOS\DESARROLLO WEB HTML\proyecto taller web\BlogArte\PlayaVideo.mp4"></video>
-          <p>Playa por Mathias Ignacio</p><br>
-          <hr>
-        </div>
-      </section>
-    
-      <section >
-        <h2>Listado de Artistas</h2>
-        <table>
-          <tr>
-            <th>Nombre</th>
-            <th>Estilo</th>
-            <th>Ciudad</th>
-          </tr>
-          <tr>
-            <td>Moises Vargas</td>
-            <td>Fantasia</td>
-            <td>Trujillo</td>
-          </tr>
-          <tr>
-            <td>Sebastian Virgilio</td>
-            <td>Arte digital</td>
-            <td>Lima</td>
-          </tr>
-          <tr>
-            <td>Leticia Ruiz</td>
-            <td>Retro futurista</td>
-            <td>Ayacucho</td>
-          </tr>
-          <tr>
-            <td>Mathias Ignacio</td>
-            <td>Naturaleza</td>
-            <td>Tumbes</td>
-          </tr>
-        </table>
-      </section>
-    
-      <section>
-        <h2>Registrate para disfurtar mas contenido</h2>
-        <form>
-          <label >Nombre completo:</label>
-          <input type="text"  name="nombre" required>
-          <br>
-          <label>Correo electrónico:</label>
-          <input type="email" name="email" required>
-          <br>
-    
-          <label>Estilo artístico:</label>
-          <select name="estilo">
-            <option value="acuarela">Acuarela</option>
-            <option value="digital">Digital</option>
-            <option value="óleo">Óleo</option>
-            <option value="otro">Otro</option>
-          </select>
-          <br>
-    
-          <label>Breve biografía:</label>
-          <textarea name="biografia" rows="4"></textarea>
-    
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
-    
-      <section id="contacto">
-        <h2>Contáctanos</h2>
-        <p>Correo: contacto@arteutp.pe</p>
-        <p>Teléfono: +51 976543218</p>
-      </section>
-    
-      <footer>
-        <p>&copy; 2025 ArteUTP. Todos los derechos reservados.</p>
-      </footer>
+
+<section class="galeria">
+  <h2>Galería de Obras:</h2>
+  <div class="galeria-columna">
+    <div class="obra">
+      <img src="imagen1.webp" alt="paisaje 1 por: Moises Vargas">
+      <p>"Paisaje 1" Moises Vargas</p>
+    </div>
+    <div class="obra">
+      <img src="imagen2.webp" alt="paisaje 2 por Moises Vargas">
+      <p>"Paisaje 2" Moises Vargas</p>
+    </div>
+    <div class="obra">
+      <img src="espacio1.webp" alt="espacio 1 por Sebastian Virgilio">
+      <p>"Espacio 1" Sebastian Virgilio</p>
+    </div>
+    <div class="obra">
+      <img src="espacio 2.webp" alt="espacio 2 por Sebastian Virgilio">
+      <p>"Espacio 2" Sebastian Virgilio</p>
+    </div>
+    <div class="obra">
+      <img src="ciudad1.webp" alt="ciudad 1 por Leticia Ruiz">
+      <p>"Ciudad 1" Leticia Ruiz</p>
+    </div>
+    <div class="obra">
+      <img src="ciudad2.webp" alt="ciudad 2 por Leticia Ruiz">
+      <p>"Ciudad 2" Leticia Ruiz</p>
+    </div>
+  </div>
+    <div class="obra">
+      <video controls src="PlayaVideo.mp4"></video>
+      <p>Playa por Mathias Ignacio</p>
+    </div>
+</section>
+
+  <section >
+    <h2>Listado de Artistas</h2>
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>Estilo</th>
+        <th>Ciudad</th>
+      </tr>
+      <tr>
+        <td>Moises Vargas</td>
+        <td>Fantasia</td>
+        <td>Trujillo</td>
+      </tr>
+      <tr>
+        <td>Sebastian Virgilio</td>
+        <td>Arte digital</td>
+        <td>Lima</td>
+      </tr>
+      <tr>
+        <td>Leticia Ruiz</td>
+        <td>Retro futurista</td>
+        <td>Ayacucho</td>
+      </tr>
+      <tr>
+        <td>Mathias Ignacio</td>
+        <td>Naturaleza</td>
+        <td>Tumbes</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Registrate para disfurtar mas contenido</h2>
+    <form>
+      <label >Nombre completo:</label>
+      <input type="text"  name="nombre" required>
+      <br>
+      <label>Correo electrónico:</label>
+      <input type="email" name="email" required>
+      <br>
+
+      <label>Estilo artístico:</label>
+      <select name="estilo">
+        <option value="acuarela">Acuarela</option>
+        <option value="digital">Digital</option>
+        <option value="óleo">Óleo</option>
+        <option value="otro">Otro</option>
+      </select>
+      <br>
+
+      <label>Breve biografía:</label>
+      <textarea name="biografia" rows="4"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>Correo: contacto@arteutp.pe</p>
+    <p>Teléfono: +51 976543218</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ArteUTP. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>

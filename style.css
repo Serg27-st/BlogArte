@@ -53,7 +53,7 @@ header {
 }
 
 .logo-img {
-  width: 50px;
+  width: 220px;
   height: auto;
 }
 
@@ -266,4 +266,8 @@ footer {
 
 section, .galeria, .obra, form {
   animation: fadeIn 1s ease-in-out;
+}
+
+.contenido-ajustado {
+  padding-top: 100px;
 }

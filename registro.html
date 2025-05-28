@@ -4,14 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro de Artistas – ArtPlace</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
   <link rel="stylesheet" href="registro.css">
 </head>
 <body>
-  <header class="main-header">
-    <h1><a href="index.html">ArtPlace</a></h1>
-  </header>
+<header class="main-header">
+  <div class="contenedor-header">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="utpLogo.png" alt="Logo UTP" class="logo-img">
+      </a>
+    </div>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="registro.html">Registro de Artistas</a></li>
+        <li><a href="informacion.html">Información de Artistas</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <main class="formulario-container">
+  <main class="formulario-container contenido-ajustado">
     <h2>Registro de Artistas</h2>
     <form action="procesar_registro.php" method="post" class="formulario-artista">
       <label for="nombre">Nombre Completo:</label>

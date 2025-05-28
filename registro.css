@@ -1,0 +1,90 @@
+/* Fuente artística */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+  background-color: #fdf5e6;
+  font-family: serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.main-header {
+  background-color: #782626;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-header h1 a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.formulario-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fffaf0;
+  border: 2px solid #d4af37;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.formulario-container h2 {
+  text-align: center;
+  color: #782626;
+  margin-bottom: 20px;
+}
+
+.formulario-artista {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-artista label {
+  font-weight: bold;
+}
+
+.formulario-artista input,
+.formulario-artista select,
+.formulario-artista textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.formulario-artista button {
+  padding: 12px;
+  background-color: #782626;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.formulario-artista button:hover {
+  background-color: #a23b3b;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .formulario-container {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  .formulario-artista input,
+  .formulario-artista textarea,
+  .formulario-artista select {
+    font-size: 0.95rem;
+  }
+
+  .main-header h1 a {
+    font-size: 1.5rem;
+  }
+}

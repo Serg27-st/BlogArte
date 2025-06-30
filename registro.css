@@ -1,5 +1,10 @@
 /* Fuente artística */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+#preview {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+}
 
 body {
   background-color: #fdf5e6;

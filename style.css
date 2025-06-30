@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+.tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-top: 5px;
+  display: none;
+  z-index: 10;
+}
+
 body {
   /* Fondo actualizado: transición suave de tonos crema y beige */
   background: linear-gradient(to bottom, #fef9f4, #fbeac8);
@@ -13,13 +25,13 @@ body {
   padding: 0%;
   padding-top: 100px;
   transition: background 1s ease;
-  
+
 }
 
 /* -------- HEADER -------- */
 header {
 
-  
+
   background-color: #fff;
   padding: 20px;
   position: fixed;
@@ -27,7 +39,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   animation: slideDown 1s ease;
 }
 
@@ -36,6 +48,7 @@ header {
     transform: translateY(-100%);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -118,7 +131,7 @@ form {
   border-radius: 10px;
   max-width: 500px;
   margin: 20px auto;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* -------- BOTÓN -------- */
@@ -132,6 +145,7 @@ button {
   margin-top: 10px;
   transition: background-color 0.3s ease;
 }
+
 button:hover {
   background-color: #a80e26;
 }
@@ -140,7 +154,7 @@ button:hover {
 .galeria {
   display: flexbox;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
+  gap: 10px;
   padding: 20px;
 }
 
@@ -163,6 +177,7 @@ button:hover {
 .galeria svg:hover {
   transform: scale(1.03);
 }
+
 .galeria-columna {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -172,14 +187,14 @@ button:hover {
 
 /* -------- OBRA -------- */
 .obra {
-  background-color: #8B0000;
-  border: 3px solid #b3003c;
-  padding: 15px;
+  background-color: #2d0000;
+  border: 3px solid #23000c;
+  padding: 1px;
   border-radius: 10px;
-  max-width: 320px;
+  max-width: 400px;
   margin: auto;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
 }
 
@@ -187,16 +202,6 @@ button:hover {
   transform: scale(1.05);
 }
 
-.obra p {
-  background-color: #fce4ec;
-  border: 2px solid #6a1b9a;
-  padding: 8px 12px;
-  margin-top: 12px;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 18px;
-  color: #420202;
-}
 
 /* -------- FOOTER -------- */
 footer {
@@ -210,39 +215,44 @@ footer {
 /* Para telefonos */
 @media (max-width: 768px) {
   header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 30px;
-  position: relative;
-  z-index: 100;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 100;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
   .main-header {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .contenedor-header {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+
   .nav-links ul {
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
   }
- .galeria h2 {
+
+  .galeria h2 {
     font-size: 1.5rem;
   }
 
-  .obra p, .galeria-video p {
+  .obra p,
+  .galeria-video p {
     font-size: 0.9rem;
   }
 
   .tarjeta {
-    max-width: 90%;              
+    max-width: 90%;
   }
 }
 
@@ -250,21 +260,25 @@ footer {
 /* para tablets */
 @media (max-width: 992px) {
   header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 30px;
-  position: relative;
-  z-index: 100;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 100;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
   .galeria {
-    display: block; 
+    display: block;
   }
 }
 
-section, .galeria, .obra, form {
+section,
+.galeria,
+.obra,
+form {
   animation: fadeIn 1s ease-in-out;
 }
 

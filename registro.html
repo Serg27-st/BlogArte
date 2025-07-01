@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Artistas – ArtPlace</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+  <link rel="stylesheet" href="registro.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="contenedor-header">
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="utpLogo.png" alt="Logo UTP" class="logo-img">
+        </a>
+      </div>
+      <nav class="nav-links">
+        <ul>
+          <li><a href="registro.html">Registro de Artistas</a></li>
+          <li><a href="informacion.html">Información de Artistas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="formulario-container contenido-ajustado">
+    <h2>Registro de Artistas</h2>
+    <form class="formulario-artista">
+      <label for="nombre">Nombre Completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="correo">Correo Electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="especialidad">Especialidad Artística:</label>
+      <select id="especialidad" name="especialidad" required>
+        <option value="">--Seleccione--</option>
+        <option value="pintura">Pintura</option>
+        <option value="escultura">Escultura</option>
+        <option value="fotografia">Fotografía</option>
+        <option value="dibujo">Dibujo</option>
+        <option value="otro">Otro</option>
+      </select>
+
+      <label for="telefono">Número de Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" pattern="\d{9}" required>
+
+      <label for="experiencia">Nivel de Experiencia (1-10):</label>
+      <input type="range" id="experiencia" name="experiencia" min="1" max="10" value="5"
+        oninput="document.getElementById('nivel').textContent = this.value">
+      <span id="nivel">5</span>
+
+      <label for="terminos">
+        <input type="checkbox" id="terminos" required>
+        Acepto los términos y condiciones
+      </label>
+
+
+      <button type="submit">Registrarse</button>
+
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2025 ArteUTP. Todos los derechos reservados.</p>
+  </footer>
+  <script src="registro.js"></script>
+</body>
+
+
+</html>

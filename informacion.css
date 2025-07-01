@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: serif;
+  background-color: #fffaf0;
+  color: #333;
+}
+
+.main-header {
+  background-color: #782626;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-header h1 a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+.contenido {
+  margin: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.contenido h2 {
+  color: #782626;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.tabla-artistas {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabla-artistas th,
+.tabla-artistas td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.tabla-artistas th {
+   background-color: #800000;
+      color: white;
+}
+
+.tabla-artistas tr:hover {
+  background-color: #e9ecef;
+  transition: background-color 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-contenido {
+  background: white;
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+
+  .tabla-artistas th,
+  .tabla-artistas td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .contenido h2 {
+    font-size: 1.5rem;
+  }
+
+  .main-header h1 a {
+    font-size: 1.8rem;
+  }
+}

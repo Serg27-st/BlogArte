@@ -65,6 +65,12 @@ header {
   flex-wrap: wrap;
 }
 
+.nav-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
 .logo-img {
   width: 220px;
   height: auto;
@@ -81,6 +87,25 @@ header {
 
 .titulo a:hover {
   color: #B22222;
+}
+
+.agregar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Centra horizontalmente */
+  justify-content: center;
+  /* Centra verticalmente (opcional) */
+  padding: 40px 20px;
+  gap: 5px;
+  /* Espacio entre elementos */
+  background-color: #fff3e4;
+  border: 5px solid #360000;
+  border-radius: 20px;
+  max-width: 50%;
+  margin: 30px auto;
+  /* Centra horizontalmente si no hay height completo */
+  box-shadow: 0 20px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* -------- NAVEGACIÓN -------- */
@@ -151,6 +176,104 @@ button:hover {
 }
 
 /* -------- GALERÍA -------- */
+.input-obra {
+  display: block;
+  margin: 10px 20px;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.boton-agregar {
+  background-color: #1e1e1e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  justify-items: center;
+}
+
+.boton-agregar:hover {
+  background-color: #800000;
+}
+
+/* Menú hamburguesa */
+.hamburguesa {
+  display: none;
+  font-size: 28px;
+  background-color: #800000;
+  /* Color burdeos elegante */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-left: 10px;
+  z-index: 1002;
+}
+
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.modal-contenido {
+  background: white;
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-contenido img,
+.modal-contenido video {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #800000;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #b30000;
+}
+
 .galeria {
   display: flexbox;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -214,7 +337,10 @@ footer {
 /* -------- RESPONSIVE -------- */
 /* Para telefonos */
 @media (max-width: 768px) {
+
+
   header {
+    min-width: 364px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -231,6 +357,7 @@ footer {
   }
 
   .contenedor-header {
+    max-width: 364px;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -254,7 +381,52 @@ footer {
   .tarjeta {
     max-width: 90%;
   }
+
+  .menu {
+    max-width: 364px;
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .menu li a {
+    color: white;
+  }
+
+  .menu.mostrar {
+    display: flex;
+  }
+
+  .hamburguesa {
+    display: block;
+  }
+
+  .agregar {
+    max-width: 364px;
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px 10px;
+    gap: 10px;
+  }
+
+  .agregar .input-obra,
+  .agregar .boton-agregar {
+    font-size: 16px;
+    padding: 10px;
+  }
 }
+
 
 
 /* para tablets */

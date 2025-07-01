@@ -28,7 +28,7 @@
 
   <main class="formulario-container contenido-ajustado">
     <h2>Registro de Artistas</h2>
-    <form action="procesar_registro.php" method="post" class="formulario-artista">
+    <form class="formulario-artista">
       <label for="nombre">Nombre Completo:</label>
       <input type="text" id="nombre" name="nombre" required>
 
@@ -45,9 +45,6 @@
         <option value="otro">Otro</option>
       </select>
 
-      <label for="descripcion">Descripción de tu obra:</label>
-      <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
-
       <label for="telefono">Número de Teléfono:</label>
       <input type="tel" id="telefono" name="telefono" pattern="\d{9}" required>
 
@@ -61,16 +58,16 @@
         Acepto los términos y condiciones
       </label>
 
-      <label for="archivo">Sube una imagen de tu obra:</label>
-      <input type="file" id="archivo" name="archivo" accept="image/*">
-      <img id="preview" src="" alt="Vista previa" style="max-width: 200px; display: none; margin-top: 10px;">
-
 
       <button type="submit">Registrarse</button>
 
     </form>
   </main>
+  <footer>
+    <p>&copy; 2025 ArteUTP. Todos los derechos reservados.</p>
+  </footer>
   <script src="registro.js"></script>
 </body>
+
 
 </html>

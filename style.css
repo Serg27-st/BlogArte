@@ -18,9 +18,9 @@
 
 body {
   /* Fondo actualizado: transición suave de tonos crema y beige */
-  background: linear-gradient(to bottom, #fef9f4, #fbeac8);
-  font-family: 'Georgia', serif;
-  color: #333;
+   background: url(fondo-de-papel-de-la-textura-de-la-fibra-38977861.webp);
+  font-family: 'Lora', serif;
+  color: #4B2E2E;
   margin: 0;
   padding: 0%;
   padding-top: 100px;
@@ -32,8 +32,8 @@ body {
 header {
 
 
-  background-color: #fff;
-  padding: 20px;
+  background-color: #f5efef;
+  padding: 20px 40px;
   position: fixed;
   top: 0;
   left: 0;
@@ -90,22 +90,37 @@ header {
 }
 
 .agregar {
+  font-family: 'Lora', serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* Centra horizontalmente */
   justify-content: center;
   /* Centra verticalmente (opcional) */
-  padding: 40px 20px;
+  padding: 30px 25px;
   gap: 5px;
   /* Espacio entre elementos */
-  background-color: #fff3e4;
-  border: 5px solid #360000;
-  border-radius: 20px;
-  max-width: 50%;
-  margin: 30px auto;
+  background-color: #fffaf3;
+  border: 2px solid #751e38;
+  border-radius: 15px;
+  max-width: 400px;
+   margin: 40px auto;
   /* Centra horizontalmente si no hay height completo */
-  box-shadow: 0 20px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.agregar h2 {
+   margin-bottom: 20px;
+  color: #5e2a2a;
+  font-size: 1.8rem;
+}
+.input-obra {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #662f2f;
+  border-radius: 8px;
+  font-size: 1rem;
 }
 
 /* -------- NAVEGACIÓN -------- */
@@ -186,19 +201,22 @@ button:hover {
 }
 
 .boton-agregar {
-  background-color: #1e1e1e;
+  background-color: #8b1e3f;
   color: #fff;
   border: none;
   border-radius: 8px;
   margin: 10px;
   cursor: pointer;
+  margin-top: 10px;
+  font-size: 1rem;
   font-weight: bold;
   transition: background-color 0.3s ease;
   justify-items: center;
+  
 }
 
 .boton-agregar:hover {
-  background-color: #800000;
+  background-color: #a03356;
 }
 
 /* Menú hamburguesa */
@@ -310,28 +328,31 @@ button:hover {
 
 /* -------- OBRA -------- */
 .obra {
-  background-color: #2d0000;
-  border: 3px solid #23000c;
-  padding: 1px;
-  border-radius: 10px;
+  background-color: #550f0f;
+  border: 1px solid #ccc;
+  padding: 2px;
+  border-radius: 12px;
   max-width: 400px;
   margin: auto;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .obra:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 
 /* -------- FOOTER -------- */
 footer {
-  background-color: #D0122F;
+  background-color: #8B0000;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
 }
 
 /* -------- RESPONSIVE -------- */

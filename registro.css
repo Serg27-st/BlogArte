@@ -17,10 +17,18 @@ body {
   color: #333;
 }
 
-.main-header {
-  background-color: #782626;
-  padding: 20px;
-  text-align: center;
+header {
+
+
+  background-color: #f5efef;
+  padding: 20px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideDown 1s ease;
 }
 
 .main-header h1 a {

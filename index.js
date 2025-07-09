@@ -143,13 +143,14 @@ window.onclick = (e) => {
     modal.style.display = "none";
   }
 };
-document.getElementById("btnMenu").addEventListener("click", () => {
+
+document.getElementById("btnMenu").addEventListener("mouseover", () => {
   document.getElementById("menu").classList.toggle("mostrar");
 });
 
 // Cierra el menú cuando se hace clic en un enlace (opcional)
 document.querySelectorAll("#menu a").forEach(link => {
-  link.addEventListener("click", () => {
+  link.addEventListener("mouseover", () => {
     document.getElementById("menu").classList.remove("mostrar");
   });
 });

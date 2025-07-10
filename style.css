@@ -18,7 +18,7 @@
 
 body {
   /* Fondo actualizado: transición suave de tonos crema y beige */
-  background: url(fondo-de-papel-de-la-textura-de-la-fibra-38977861.webp);
+  background: url(fondo.png);
   font-family: 'Lora', serif;
   color: #4B2E2E;
   margin: 0;
@@ -205,7 +205,7 @@ button:hover {
   background-color: #8b1e3f;
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 0px;
   margin: 10px;
   cursor: pointer;
   margin-top: 10px;
@@ -214,6 +214,15 @@ button:hover {
   transition: background-color 0.3s ease;
   justify-items: center;
 
+}
+
+.agregar {
+  border-radius: 0;              /* texto oscuro para contraste */
+  border: none;
+}
+
+.input-obra {
+  border-radius: 0;
 }
 
 .boton-agregar:hover {
@@ -329,10 +338,10 @@ button:hover {
 
 /* -------- OBRA -------- */
 .obra {
-  background-color: #550f0f;
-  border: 1px solid #ccc;
+  background-color: #D9D9D9;
+  border: 0px solid #ccc;
   padding: 2px;
-  border-radius: 12px;
+  border-radius: 0px;
   max-width: 400px;
   margin: auto;
   text-align: center;
